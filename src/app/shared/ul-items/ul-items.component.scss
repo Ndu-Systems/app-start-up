@@ -35,6 +35,11 @@ ul {
       left: -50px;
       text-align: left;
       z-index: 100;
+      @media only screen and (max-width: 600px) {
+        left: 35%;
+        background: red;
+
+      }
 
       li {
         background: #ecf0f1;
