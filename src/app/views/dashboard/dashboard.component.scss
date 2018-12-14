@@ -13,16 +13,11 @@
     position: absolute;
     top: 1%;
     right: 0;
-
-
-
   }
-
 }
 
 .toggle-profile {
   cursor: pointer;
-
 }
 .drop-down-items {
   display: none;
@@ -31,16 +26,17 @@
   background: #ffbe76;
   padding: 2%;
   z-index: 10;
-  li{
+
+  li {
     display: inline-block;
     padding: 1%;
   }
- a{
-  color: white;
-  text-decoration: none;
- }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
-.toggle-profile :hover .drop-down-items{
+.toggle-profile :hover .drop-down-items {
   display: block !important;
 }
-

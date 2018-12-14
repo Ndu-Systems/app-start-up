@@ -1,13 +1,16 @@
-<div class="nav-container">
+<div class="nav-container" *ngIf="showNv">
   <section class="logo-section">
     <div class="logo">
       <h1>
         <a routerLink="/">  Start.IO</a>
       </h1>
     </div>
+    <div class="close" (click)="toggleNav()">
+      <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+    </div>
   </section>
 
-  <section class="nav-section">
+  <section class="nav-section" >
     <div class="nav">
       <ul>
         <li>
@@ -27,4 +30,19 @@
       </ul>
     </div>
   </section>
+</div>
+
+
+<div class="mobile-header">
+  <div class="logo">
+    <h1>
+      Start-IO
+    </h1>
+  </div>
+
+  <div class="nav" (click)="toggleNav()">
+    <h1><i class="fa fa-bars" aria-hidden="true"></i>
+    </h1>
+  </div>
+  <div class="nav"></div>
 </div>

@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-pc-nav.component.scss']
 })
 export class HomePcNavComponent implements OnInit {
-
+  showNv = false;
   constructor() { }
 
   ngOnInit() {
   }
-
+  toggleNav(){
+    this.showNv = !this.showNv
+  }
 }
